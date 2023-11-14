@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-header{
+    background-color:#EAC926 ;
+    font-family: 'Roboto', 'sans-serif';
+    width: 100vw;
+    height: 100vh;
+}
+header nav{
+    display: none;
+}
+.titulares{
+    font-size: 24px;
+}
+.titulo2{
+    text-align: center;
+}
+.nav-bar li{
+    text-decoration: none;
+    text-align: left;
+}
+.cuerpo-texto{
+    font-size: 12px;
+}
+main {
+    width: 90vw;
+    margin: auto;
+    background-color:#ebebeb ;
+    padding: 0;
+}
+.producto{
+    margin:10px;
+    background-color: white;
+    width: auto;
+}
+.producto div{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.fa-circle{
+    display: inline;
+    width: 0vw;
+    font-size: 10vw;
+    color: green;
+}
+.fa-truck{
+    width: 10vw;
+    font-size: 4vw;
+    color: green;
+    text-align: center;
+}
+.precios{
+    font-size: 18px;
+    margin: 0;
+}
+.descuento{
+    font-size: 16px;
+    color: green;
+    margin:0;
+    
+}
+.descripciones{
+    font-size: 16px;
+    display: none;
+}
+.burger-menu{
+    width: 20px;
+    margin: auto;
+    background-color: #1259c3;
+}
+.fa-bars{
+    color: white;
+    margin: auto;
+}
+footer{
+    background-color: white;
+}
+.pie-pagina{
+    text-align: center;
+}
+.iconos{
+    color: #1259c3;
+    size: 2em;
+}
+/*== Breakpoint Tablets==*/
+ @media(min-width:481px){
+    .burger-menu{
+        display: none;
+    }
+    .descripciones{
+        display: block;
+    }
+    header nav{
+        display: block;
+    }
+
+ }
+ /*== Breakpoint Desktop==*/
+ @media(min-width: 769px){
+
+ }
