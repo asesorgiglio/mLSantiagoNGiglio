@@ -1,79 +1,160 @@
-*{
+*{  margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', 'sans-serif';
 }
 
 .main-header{
     background-color:#EAC926 ;
-    font-family: 'Roboto', 'sans-serif';
-    width: 100vw;
-    height: 100vh;
+    padding: 20px;    
+    
+}
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-header-top-bar img{
+    width: 50%;
+
+}
+.nav-search{
+    width: 45%;
+    height: 2rem;
+    align-items: center;
+    display: flex;
+    background-color: white;
+}
+.nav-search-fm{
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-search-fm label{
+    display: none;
+}
+.nav-search-fm{
+    display: flex;
+}
+.nav-search-imput{
+    display: block;
+    width: 80%;
+    border: none;
+}
+.nav-search-btn{
+    display: block;
+    background-color: white;
+    border: none;
+    width: 15%;
+}
+
+
+.burger-menu{
+    width: 10.5vw;
+    height: 10.9vw;
+    margin: auto;
+    background-color: #1259c3;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1vw;
+    margin-top: 3vh;
+    
+}
+.fa-bars{
+    color: white;
+    margin: 1vw;
+    font-size: 6.5vw;
 }
 header nav{
     display: none;
 }
 .titulares{
     font-size: 24px;
+    width: 100%;
 }
 .titulo2{
+    font-weight: 400;
     text-align: center;
+    width: 100%;
+    margin-top: 2vh;
 }
-.nav-bar li{
+.main-header-bottom-bar ul a{
     text-decoration: none;
     text-align: left;
+    color:#222222;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px 0;
 }
 .cuerpo-texto{
     font-size: 12px;
 }
-main {
+main section{
     width: 90vw;
     margin: auto;
     background-color:#ebebeb ;
-    padding: 0;
+  
+}
+.banner{
+    width: 100%;
+    
 }
 .producto{
-    margin:10px;
+    margin:5px;
     background-color: white;
     width: auto;
 }
+.producto img{
+    width: 100%;
+}
 .producto div{
+    width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
 }
-.fa-circle{
-    display: inline;
-    width: 0vw;
-    font-size: 10vw;
-    color: green;
+
+.producto div >.fa-truck{
+    display: block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    padding: 5px;
 }
 .fa-truck{
-    width: 10vw;
-    font-size: 4vw;
-    color: green;
-    text-align: center;
+    color:#39b54a;
 }
+
 .precios{
     font-size: 18px;
     margin: 0;
+    width: 30%;
 }
 .descuento{
     font-size: 16px;
     color: green;
     margin:0;
+    width: 70%;
     
 }
 .descripciones{
     font-size: 16px;
     display: none;
 }
-.burger-menu{
-    width: 20px;
-    margin: auto;
-    background-color: #1259c3;
-}
-.fa-bars{
-    color: white;
-    margin: auto;
-}
+
+
+
 footer{
     background-color: white;
 }
@@ -83,21 +164,94 @@ footer{
 .iconos{
     color: #1259c3;
     size: 2em;
+    margin-bottom: 10px;
+}
+footer h6{
+    margin: 2.5vh;
+    text-align: right;
 }
 /*== Breakpoint Tablets==*/
- @media(min-width:481px){
+ @media(min-width:481px){   
     .burger-menu{
         display: none;
     }
-    .descripciones{
-        display: block;
+    .main-header-top-bar{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2vh;
+        
+    }
+    .nav-search{
+        width: 31vw;
+    }
+    .main-header-top-bar img{
+        width: 31vw;
+    }
+    .titulo2{
+        width: 31vw;
     }
     header nav{
-        display: block;
+        display: contents;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-
+    .main-header-bottom-bar{
+        margin: 2.5vh 0 0 0;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav ul li{
+        display: block;
+        font-size: 90%;        
+    }
+    main section{
+        width: 100%;
+       
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .titulares{
+        margin: 2rem;
+        font-weight: 800;
+    }
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+    .precios{
+        font-size: 90%;
+        width: 50%;
+    }
+    .descuento{
+        font-size: 90%;
+        width: 50%;
+        text-align: center;        
+    }
+    .descripciones{
+        display: block;
+        margin: 2.4vh 0;
+        font-size: 90%;
+                
+    }
  }
+
  /*== Breakpoint Desktop==*/
  @media(min-width: 769px){
+    .producto{
+        width: 20%;
+    }
+
+    .descuento{
+        text-align: right;        
+    }
+
 
  }
